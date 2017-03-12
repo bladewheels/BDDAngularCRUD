@@ -7,3 +7,9 @@
 - Persistence
 
 ###### Includes BDD test scenarios
+
+
+### Installation:
+- node
+- npm install
+- bower install
