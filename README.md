@@ -12,4 +12,5 @@
 ### Installation:
 - node
 - npm install
-- bower install
+- bower install angular
+- bower install angular-mocks

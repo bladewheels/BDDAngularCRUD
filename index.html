@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SMITH Reviews</title>
-</head>
-<body ng-app='reviews'>
-  <div ng-controller='ReviewController'>
-    <textarea ng-model='newReview' name="textarea" rows="10" cols="50" placeholder ="Write a review"></textarea>
-    <button type="button" ng-click="add(newReview)">Submit</button>
-    <ul>
-      <li ng-repeat='review in reviews'>{{review}}</li>
-    </ul>
-  </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMITH Reviews</title>
+  </head>
+  <body ng-app='reviews'>
+    <div ng-controller='ReviewController'>
+      <textarea ng-model='newReview' name="textarea" rows="10" cols="50" placeholder ="Write a review"></textarea>
+      <button type="button" ng-click="add(newReview)">Submit</button>
+      <ul>
+        <li ng-repeat='review in reviews'>{{review}}</li>
+      </ul>
+    </div>
 
-  <script type='text/javascript' src='bower_components/angular/angular.js'></script>
-  <script src='app/reviews.js'></script>
-  <script src='app/reviewController.js'></script>
-</body>
+    <script type='text/javascript' src='bower_components/angular/angular.js'></script>
+    <script src='app/reviews.js'></script>
+    <script src='app/reviewService.js'></script>
+    <script src='app/reviewController.js'></script>
+  </body>
 </html>
