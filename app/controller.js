@@ -2,7 +2,9 @@
   'use strict';
   angular.module('reviews')
   .controller('ReviewController',['$scope', 'dataService', function($scope, dataService) {
+
       $scope.reviews = dataService.get();
+      
       $scope.add = function(r) {
         dataService.save(r);
         $scope.newReview = '';
