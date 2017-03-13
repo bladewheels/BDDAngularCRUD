@@ -32,21 +32,21 @@
     </nav>
 
     <div class="container">
-      <div class="template">
+      <div class="centerText">
         <div ng-controller='ReviewController' class='container'>
           <textarea ng-model='newReview' name="textarea" rows="10" cols="50" placeholder ="Write a review"></textarea>
-          <button type="button" ng-click="add(newReview)">Submit</button>
+          <button type="button" class="btn btn-sm btn-success" ng-click="add(newReview)">Submit</button>
 
           <table st-table="reviews" class="table table-striped">
             <thead>
               <tr>
-                <th>Date</th>
-                <th>Review</th>
+                <th st-sort="date">Date</th>
+                <th st-sort="text">Review</th>
               </tr>
             </thead>
             <tbody>
               <tr ng-repeat="review in reviews">
-                <td>{{review.date}}</td>
+                <td>{{review.date | date:'medium'}}</td>
                 <td>{{review.text}}</td>
               </tr>
             </tbody>
