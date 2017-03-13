@@ -1,9 +1,13 @@
 body {
   padding-top: 6em;
 }
-.centerText {
-  text-align: center;
+thead tr th {
+  text-align: left;
+  background-color: #b3e5fc;
 }
-th {
+thead tr th:nth-of-type(2){
+    background-color: #b2ebf2;
+}
+td {
   text-align: left;
 }

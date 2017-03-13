@@ -4,7 +4,8 @@
   .controller('ReviewController',['$scope', 'dataService', function($scope, dataService) {
 
       $scope.reviews = dataService.get();
-      
+      //$scope.displayedReviews = dataService.get();
+
       $scope.add = function(r) {
         dataService.save(r);
         $scope.newReview = '';

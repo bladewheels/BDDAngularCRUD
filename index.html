@@ -32,32 +32,60 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="centerText">
+      <div>
         <div ng-controller='ReviewController' class='container'>
-          <textarea ng-model='newReview' name="textarea" rows="10" cols="50" placeholder ="Write a review"></textarea>
-          <button type="button" class="btn btn-sm btn-success" ng-click="add(newReview)">Add</button>
 
-          <table st-table="reviews" class="table table-striped">
-            <thead>
-              <tr>
-                <th st-sort="date" st-sort-default="reverse">Date</th>
-                <th st-sort="text">Review</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr ng-repeat="review in reviews">
-                <td>{{review.date | date:'medium'}}</td>
-                <td>{{review.text}}</td>
-              </tr>
-            </tbody>
-        		<tfoot>
-        			<tr>
-        				<td colspan="2" class="text-center">
-        					<div st-pagination="" st-items-by-page="7" st-displayed-pages="7"></div>
-        				</td>
-        			</tr>
-        		</tfoot>
-          </table>
+          <div class="container">
+              <div class="row centered-form">
+                  <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+              	    <div class="panel panel-success">
+              		    <div class="panel-heading">
+          		    		  <h3 class="panel-title">Add a Review</h3>
+          		 	      </div>
+          		 		    <div class="panel-body">
+          		    		  <div class="row">
+          		    			  <div class="col-xs-6 col-sm-6 col-md-6">
+          		    				  <div class="form-group">
+                              <textarea ng-model='newReview' name="textarea" rows="10" cols="34" placeholder ="Write a review"></textarea>
+          		    				  </div>
+          		    			  </div>
+          		    			  <input type="submit" ng-click="add(newReview)" value="Add" class="btn btn-info btn-block">
+          		    	    </div>
+              		    </div>
+          		    </div>
+          	    </div>
+              </div>
+          </div>
+
+          <div class="panel panel-primary">
+      		  <!-- Default panel contents -->
+      		  <div class="panel-heading">Reviews</div>
+      		  <div class="panel-body">
+      			  <p>Click on the column headers to sort the Reviews</p>
+      		  </div>
+        		<!-- Table -->
+            <table st-table="reviews" class="table table-striped">
+              <thead>
+                <tr>
+                  <th st-sort="date" st-sort-default="reverse">Date</th>
+                  <th st-sort="text">Review</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ng-repeat="review in reviews">
+                  <td>{{review.date | date:'medium'}}</td>
+                  <td>{{review.text}}</td>
+                </tr>
+              </tbody>
+          		<tfoot>
+          			<tr>
+          				<td colspan="2" class="text-center">
+          					<div st-pagination="" st-items-by-page="3" st-displayed-pages="5"></div>
+          				</td>
+          			</tr>
+          		</tfoot>
+            </table>
+          </div>
         </div>
       </div><!-- starter-template -->
     </div><!-- container -->
