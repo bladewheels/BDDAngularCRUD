@@ -1,6 +1,9 @@
 body {
   padding-top: 6em;
 }
-.template {
+.centerText {
+  text-align: center;
+}
+th {
   text-align: center;
 }
