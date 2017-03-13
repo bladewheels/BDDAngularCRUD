@@ -11,6 +11,13 @@ thead tr th:nth-of-type(2){
 td {
   text-align: left;
 }
+textarea {
+    resize: none;
+}
+td {
+  min-width: 23ch;
+  min-width: 13em;
+}
 
 .navbar-default {
   background-color: #c1e2f7;
