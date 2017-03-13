@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular-guid": "^0.1.2"
+    "angular-guid": "^0.1.2",
+    "angular-smart-table": "^2.1.8"
   }
 }
