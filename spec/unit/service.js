@@ -1,5 +1,5 @@
 xdescribe('The data service', function(){
-  // TODO: Figure out how to inject dependent service (localStorage) into dataService
+  // TODO: Figure out how to inject a dependent service (localStorage) into dataService
   var service = null;
 
   beforeEach(module('reviews'));
