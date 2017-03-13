@@ -18,9 +18,10 @@ module.exports = function(config) {
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'spec/unit/**/*.js',
-      'app/reviews.js',
-      'app/reviewService.js',
-      'app/reviewController.js'
+      'app/storageService.js',
+      'app/module.js',
+      'app/service.js',
+      'app/controller.js'
     ],
 
 

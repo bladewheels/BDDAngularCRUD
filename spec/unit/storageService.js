@@ -1,11 +1,10 @@
-describe('The service', function(){
+describe('The storage service', function(){
 
   var service = null;
 
-  beforeEach(module('reviews'));
-
-  beforeEach(inject(function (ReviewService) {
-     service = ReviewService;
+  beforeEach(module('storageServices'));
+  beforeEach(inject(function (localStorageService) {
+     service = localStorageService;
   }));
 
 	it('should be defined',function() {
