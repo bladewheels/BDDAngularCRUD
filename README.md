@@ -2,7 +2,7 @@
 
 ### An Angular CRUD app which allows you to write, paginate and sort Reviews.
 
-![ScreenShot](https://raw.githubusercontent.com/bladewheels/BDDAngularCRUD/compare/screenshots/SMITH.Reviews.png)
+![ScreenShot](https://raw.githubusercontent.com/bladewheels/BDDAngularCRUD/screenshots/SMITH.Reviews.png)
 
 #### Uses:
 - Services
